@@ -48,7 +48,7 @@ class TestSpider(scrapy.Spider):
         #
         all_href = resource.xpath('//a/@href').extract()
 
-        #construct form url##############
+        #construct form url##############所有参数均放在url中
         form_url = []
         for form in resource.xpath('//form').extract():
         	#form action
