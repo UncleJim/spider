@@ -59,6 +59,9 @@ class TestSpider(scrapy.Spider):
         		temp = action[0]
         	else:
         		continue
+        	#action="#"
+        	if temp == '#':
+        		temp = ''
         	temp += '?'
         	for p in Selector(text=form).xpath('.//input/@name').extract():
         		temp += p + '=PARAM&'
