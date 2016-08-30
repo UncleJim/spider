@@ -1,5 +1,5 @@
 # spider
-spider based on scrapy, for security-bug hunt
+spider based on scrapy, being able to crawl whole-site, for security-bug hunt
 
 # features  
 1. crawl with cookies  
